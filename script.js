@@ -168,7 +168,7 @@ const   womenNumber =document.getElementById('womenNum').innerText;
 const antiName=document.getElementById('antiNam').innerText;
     collConfirm('antiCallBtn',antiName,106 ,'Colling Anti-Corruption Helpline Number:106' )
     
-const electricityName =document.getElementById('antiNam').innerText;
+const electricityName =document.getElementById('electricity').innerText;
     collConfirm('electricitybtn',electricityName,16216,'Colling Electricity Helpline Number:116216')
 
 const  bracName =document.getElementById('bracNam').innerText;
