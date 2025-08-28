@@ -18,7 +18,7 @@ getElementById, getElementsByClassName, and querySelector / querySelectorAll এ
 
 
   Answer :-2
-
+     create and insert a new element into the DOM
   এটা করার জন্য একটা const create = document.createElement('div')  তৈরি করতে হবে js ফাইলে,এরপর এটা যেখানে সেট করব id name নিয়ে আসতে হবে  তারপর const insert = document.getElementById('idName') এটা করতে হবে,
 
   তারপর create.innerHTML =`
@@ -33,7 +33,7 @@ getElementById, getElementsByClassName, and querySelector / querySelectorAll এ
 
 
 Answer 3:
-এটা হলো‌ js এর Event Propagation এর একটা ধাপ,যেখানে কোন একটা element এর ওপর event ঘটে সেখান থেকে শুরু করে তার parend element এবং তার paren এক এক করে উপরে উঠতে থাকে একে বলা হয়Event Bubbling.
+এটা হলো‌ js এর Event Propagation এর একটা ধাপ,যেখানে কোন একটা element এর ওপর event ঘটে সেখান থেকে শুরু করে তার parent element এবং তার paren এক এক করে উপরে উঠতে থাকে একে বলা হয়Event Bubbling.
 
 exmpmle:
 যদি button এ click করো:
