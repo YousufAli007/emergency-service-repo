@@ -73,7 +73,7 @@
                          <i  class="fa-regular fa-heart heard-btn"></i>
                         </div>
 
-                        <h2 class="text-[20px] font-semibold">National Emergency Number </h2>
+                        <h2 id="emergencyName" class="text-[20px] font-semibold">National Emergency Number </h2>
                         <p class="text-gray-500">National Emergency</p>
                         <h1 id="titleNum" class="text-3xl font-bold">999</h1>
                         <p class="w-[50px] bg-gray-200 p-2 text-center rounded-full text-gray-500 my-1">All</p>
@@ -81,7 +81,8 @@
                         <div>
                             <button id="emergencyNumber" class="btn   hover:bg-gray-200 text-gray-500 px-10 mr-4 copyQuery"> <i class="fa-regular fa-copy "></i> Copy</button>
 
-                            <button class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
+
+                            <button id="emergencyCall" class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 "> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
 
                     </div>
@@ -96,7 +97,7 @@
                          <i class="fa-regular fa-heart heard-btn heard-btn"></i>
                         </div>
 
-                        <h2 class="text-[20px] font-semibold">Police Helpline Number </h2>
+                        <h2 id="pliceName" class="text-[20px] font-semibold">Police Helpline Number </h2>
                         <p class="text-gray-500">Police</p>
                         <h1 class="text-3xl font-bold">999</h1>
                         <p class="w-[60px] bg-gray-200 p-2 text-center rounded-full text-gray-500   my-1">Police</p>
@@ -104,7 +105,7 @@
                         <div>
                             <button id="policeHepline" class="btn  hover:bg-gray-200 text-gray-500 px-10 mr-4 copyQuery"> <i class="fa-regular fa-copy"></i> Copy</button>
 
-                            <button class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="policeCall" class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
 
                     </div>
@@ -119,14 +120,14 @@
                          <i class="fa-regular fa-heart heard-btn"></i>
                         </div>
 
-                        <h2 class="text-[20px] font-semibold"> Fire Service Number </h2>
+                        <h2 id="fireName" class="text-[20px] font-semibold"> Fire Service Number </h2>
                         <p class="text-gray-500"> Fire Service</p>
                         <h1 class="text-3xl font-bold">999</h1>
                         <p class="w-[50px] bg-gray-200 p-2 text-center rounded-full text-gray-500 my-1">Fire</p>
 
                         <div>
                             <button id="fireServie" class="btn   hover:bg-gray-200 text-gray-500 px-10 mr-4 copyQuery" > <i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="fireCallBtn" class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
 
                     </div>
@@ -141,7 +142,7 @@
                          <i class="fa-regular fa-heart heard-btn"></i>
                         </div>
 
-                        <h2 class="text-[20px] font-semibold">Ambulance Service</h2>
+                        <h2 id="ambulanceName" class="text-[20px] font-semibold">Ambulance Service</h2>
                         <p class="text-gray-500"> 
                             Ambulance
                         </p>
@@ -151,7 +152,7 @@
                         <div>
                             <button id="ambulanceService" class="btn   hover:bg-gray-200 text-gray-500 px-10 mr-4 copyQuery"> <i class="fa-regular fa-copy"></i> Copy</button>
 
-                            <button class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="ambulanceCallBtn" class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
 
                     </div>
@@ -166,14 +167,14 @@
                          <i class="fa-regular fa-heart heard-btn"></i>
                         </div>
 
-                        <h2 class="text-[20px] font-semibold">Women & Child Helpline</h2>
+                        <h2 id="womenName" class="text-[20px] font-semibold">Women & Child Helpline</h2>
                         <p class="text-gray-500">Women & Child Helpline</p>
                         <h1 id="womenNum" class="text-3xl font-bold">109</h1>
                         <p class="w-[50px] bg-gray-200 p-2 text-center rounded-full text-gray-500 my-1">help</p>
 
                         <div>
                             <button id="womenChild" class="btn   hover:bg-gray-200 text-gray-500 px-10 mr-4 copyQuery"> <i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="womenCall" class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
 
                     </div>
@@ -187,14 +188,14 @@
                          <i class="fa-regular fa-heart heard-btn"></i>
                         </div>
 
-                        <h2 class="text-[20px] font-semibold">Anti-Corruption Helpline</h2>
+                        <h2 id="antiNam" class="text-[20px] font-semibold">Anti-Corruption Helpline</h2>
                         <p class="text-gray-500">Anti-Corruption</p>
                         <h1 id="antiNum" class="text-3xl font-bold">106</h1>
                         <p class="w-[50px] bg-gray-200 p-2 text-center rounded-full text-gray-500 my-1"> Govt.</p>
 
                         <div>
                             <button id="antiHelp" class="btn   hover:bg-gray-200 text-gray-500 px-10 mr-4 copyQuery"> <i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
+                            <button  id="antiCallBtn" class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
 
                     </div>
@@ -208,14 +209,14 @@
                          <i class="fa-regular fa-heart heard-btn"></i>
                         </div>
 
-                        <h2 class="text-[20px] font-semibold">Electricity Helpline</h2>
+                        <h2 id="electricity" class="text-[20px] font-semibold">Electricity Helpline</h2>
                         <p class="text-gray-500">Electricity Outage/p>
                         <h1 id="electricityNum" class="text-3xl font-bold">16216</h1>
                         <p class="w-[90px] bg-gray-200 p-2 text-center rounded-full text-gray-500 my-1 ">Electricity</p>
 
                         <div>
                             <button id="electricityHelp" class="btn   hover:bg-gray-200 text-gray-500 px-10 mr-4 copyQuery"> <i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="electricitybtn" class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
 
                     </div>
@@ -229,14 +230,14 @@
                          <i class="fa-regular fa-heart heard-btn"></i>
                         </div>
 
-                        <h2 class="text-[20px] font-semibold">Brac Helpline</h2>
+                        <h2 id="bracNam" class="text-[20px] font-semibold">Brac Helpline</h2>
                         <p class="text-gray-500">Brac</p>
                         <h1 id="bracNum" class="text-3xl font-bold">16445</h1>
                         <p class="w-[50px] bg-gray-200 p-2 text-center rounded-full text-gray-500 my-1">NGO</p>
 
                         <div>
                             <button id="bracHelping" class="btn   hover:bg-gray-200 text-gray-500 px-10 mr-4 copyQuery"> <i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="bracCallBtn" class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
 
                     </div>
@@ -250,14 +251,14 @@
                          <i class="fa-regular fa-heart heard-btn"></i>
                         </div>
 
-                        <h2 class="text-[20px] font-semibold">Bangladesh Railway Helpline </h2>
+                        <h2 id="railwayNum" class="text-[20px] font-semibold">Bangladesh Railway Helpline </h2>
                         <p class="text-gray-500">Bangladesh Railway</p>
                         <h1 id="railwayNum" class="text-3xl font-bold">163</h1>
                         <p class="w-[65px] bg-gray-200 p-2 text-center rounded-full text-gray-500 my-1">Travel</p>
 
                         <div>
                             <button id="railwayBD" class="btn   hover:bg-gray-200 text-gray-500 px-10 mr-4 copyQuery"> <i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="railwayCallBtn" class="btn bg-[#00a63e] text-white hover:bg-[#FFF59D] hover:text-[#00a63e] hover:border-[#00a63e]  px-11 my-3 emergencyCall"> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
 
                     </div>
@@ -266,20 +267,19 @@
             </div>
     
             <!-- Call History container  -->
-             <div class=" mt-16  p-5   bg-[#ffffff] shadow-2xl rounded-md">
+             <div  class=" mt-16  p-5   bg-[#ffffff] shadow-2xl rounded-md">
 
                 <div class="flex justify-between items-center mb-5">
                     <h1 class="text-[24px] font-bold" ><i class="fa-regular fa-clock mr-2"></i>Call History</h1>
-                    <button class="btn bg-[#00a63e] rounded-4xl text-white"> Clear</button>
-                </div>
 
-                <div class="bg-gray-200 p-5 rounded-md flex justify-between  items-center">
-                    <div>
-                        <h1 class="text-[23px] font-semibold">Fire Service Number</h1>
-                        <p>99</p>
-                    </div>
-                    <p>11:23:54 AM</p>
+                    <button id="clearBtn" class="btn bg-[#00a63e] rounded-4xl text-white"> Clear</button>
                 </div>
+                
+                <!-- call history input container -->
+                <div id="history-continer">
+
+                </div>
+ 
 
              </div>
     

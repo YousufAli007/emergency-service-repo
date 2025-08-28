@@ -83,21 +83,111 @@ document.getElementById('railwayBD')
         })
     }
 
- const minusCount = 20;
 
- const call= document.querySelectorAll('.emergencyCall')
-  for(const allCall of call){
-    allCall.addEventListener('click', function(){
-          const cone =parseInt(document.getElementById('cone-count').innerText);
-        if(cone <20){
+
+
+
+
+
+
+function collConfirm(id,name,sNum,confirmText){
+  document.getElementById(id)
+   .addEventListener('click', function(){
+             const cone =parseInt(document.getElementById('cone-count').innerText);
+
+         if(cone <20){
             alert("You don't have any money! 20 money to call.")
             return
         }
+        else if(confirm(confirmText)){
+
+       
          const min =cone -minusCount;
          document.getElementById('cone-count').innerText = min;
-    })
-  }
+         }
+
+            const calldata ={
+            service: name,
+            serviceNum: sNum,
+            date:new Date().toLocaleTimeString()
+
+         }
+         collDataFile.push(calldata)
+
+         
+         const historyContainer =document.getElementById('history-continer')
+
+         const div=document.createElement('div');
+
+        for(const collData of collDataFile){
+             div.innerHTML=`
+                        <div class="bg-gray-200 p-5 rounded-md flex justify-between  items-center mb-3">
+                    <div>
+                        <h1 class="text-[23px] font-semibold">${collData.service}</h1>
+                        <p>${collData.serviceNum}</p>
+                    </div>
+                    <p>${collData.date}</p>
+                </div>
+                `
+            }
+            historyContainer.appendChild(div);
+
+   })
 
 
-//   call History 
+}
+
+
+
+
+const collDataFile =[];
+
+ const minusCount = 20;
+
+ 
+const erName =document.getElementById('emergencyName').innerText;
+const enNum =document.getElementById('titleNum').innerText;
+    collConfirm('emergencyCall',erName, enNum,'Colling National Emergencty:999' )
+
+    
+const  policeName =document.getElementById('pliceName').innerText;
+const  policeNum =document.getElementById('titleNum').innerText;
+    collConfirm('policeCall',policeName,policeNum ,'Colling Police Helpline Number:999' )
+
+const fireSerName =document.getElementById('fireName').innerText;
+const fireNum =document.getElementById('titleNum').innerText;
+    collConfirm('fireCallBtn',fireSerName,fireNum ,'Colling Fire Service Number:999' )
+
+const ambulanceNam=document.getElementById('ambulanceName').innerText;
+const  ambulanceNumber =document.getElementById('ambulanceNum').innerText;
+    collConfirm('ambulanceCallBtn',ambulanceNam,ambulanceNumber ,'Colling Ambulance Service Number:1994-999999' )
+
+const womenNam=document.getElementById('womenName').innerText;
+const   womenNumber =document.getElementById('womenNum').innerText;
+    collConfirm('womenCall',womenNam,womenNumber ,'Colling Women & Child Helpline Number:109' )
+const antiName=document.getElementById('antiNam').innerText;
+    collConfirm('antiCallBtn',antiName,106 ,'Colling Anti-Corruption Helpline Number:106' )
+    
+const electricityName =document.getElementById('antiNam').innerText;
+    collConfirm('electricitybtn',electricityName,16216,'Colling Electricity Helpline Number:116216')
+
+const  bracName =document.getElementById('bracNam').innerText;
+    collConfirm('bracCallBtn',bracName,16445,'Colling Brac Helpline Number:16445')
+
+const   railwayName =document.getElementById('railwayNum').innerText;
+    collConfirm('railwayCallBtn',railwayName,163,'Colling Bangladesh Railway Helpline Number:163')
+
+
+// history clear container 
+
+
+document.getElementById('clearBtn')
+    .addEventListener('click', function(){
+        document.getElementById('history-continer').innerText = ''
+;    })
+
+
+  
+
+
 
